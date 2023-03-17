@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Presenters.Presenters
 {
-    internal class LoginPresenter : ILoginOutputPort, IPresenter<ResponseModel<LoginViewDto>>
+    public class LoginPresenter : ILoginOutputPort, IPresenter<ResponseModel<LoginViewDto>>
     {
         public ResponseModel<LoginViewDto>? Content { get; set; }
 

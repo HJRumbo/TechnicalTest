@@ -25,15 +25,21 @@ namespace UseCases.UseCases
         {
             var people = await _repository.GetAll();
 
-            var peopleView = people.Select(p => new PersonViewDto()
+            var peopleView = new List<PersonViewDto>();
+
+            if (people is not null)
             {
-                Names = p.Names,
-                LastNames = p.LastNames,
-                Email = p.Email,
-                IdentificationNumber = p.IdentificationNumber,
-                IndentificationType = p.IndentificationType,
-                CreationDate = p.CreationDate
-            }).ToList();
+                peopleView = people.Select(p => new PersonViewDto()
+                {
+                    Names = p.Names,
+                    LastNames = p.LastNames,
+                    Email = p.Email,
+                    IdentificationNumber = p.IdentificationNumber,
+                    IndentificationType = p.IndentificationType,
+                    CreationDate = p.CreationDate
+                }).ToList();
+
+            }
 
             await _outputPort.GetAllPeopleHandle(peopleView);
         }
