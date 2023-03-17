@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="card w-40 shadow px-4 py-6 mb-5 border-light bg-body-tertiary rounded">
+        <div class="card-body">
+            <div class="text-center mb-3"><i class="bi bi-person-circle icon-login"></i></div>
+            <h3 class="card-title text-center mb-3">Sign In</h3>
+            <form (ngSubmit)="login()" [formGroup]="myForm">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Nombre de usuario" formControlName="userName">
+                    <label for="floatingInput">Nombre de usuario</label>
+                    <div class="text-danger"
+                        *ngIf="myForm?.get('userName')?.invalid && myForm?.get('userName')?.touched">
+                        <span *ngIf="myForm?.get('userName')?.errors?.['required']">El usuario es requerido</span>
+                        <span *ngIf="myForm?.get('userName')?.errors?.['maxLength']">El usuario no debe ser mayor a 20 caracteres</span>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" formControlName="password">
+                    <label for="floatingPassword">Contraseña</label>
+                    <span class="text-danger"
+                        *ngIf="myForm?.get('password')?.invalid && myForm?.get('password')?.touched">
+                        La contraseña es requerida
+                    </span>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Ingresar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

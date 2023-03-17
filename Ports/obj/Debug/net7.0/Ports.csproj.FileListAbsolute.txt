@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Ports.deps.json
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Ports.dll
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Ports.pdb
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Domain.dll
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Dtos.dll
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Domain.pdb
+C:\Users\user\source\repos\TechnicalTest\Ports\bin\Debug\net7.0\Dtos.pdb
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.AssemblyInfo.cs
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.csproj.CopyComplete
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.dll
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\refint\Ports.dll
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\Ports.pdb
+C:\Users\user\source\repos\TechnicalTest\Ports\obj\Debug\net7.0\ref\Ports.dll

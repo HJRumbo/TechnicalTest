@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.AssemblyInfo.cs
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\JsonWebTokenService.deps.json
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\JsonWebTokenService.dll
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\JsonWebTokenService.pdb
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\Domain.dll
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\Dtos.dll
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\Domain.pdb
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\bin\Debug\net7.0\Dtos.pdb
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.csproj.CopyComplete
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.dll
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\refint\JsonWebTokenService.dll
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\JsonWebTokenService.pdb
+C:\Users\user\source\repos\TechnicalTest\JsonWebTokenService\obj\Debug\net7.0\ref\JsonWebTokenService.dll

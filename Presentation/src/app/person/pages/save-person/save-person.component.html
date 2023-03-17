@@ -1,0 +1,103 @@
+<div class="container my-5">
+    <div class="card w-50 shadow px-4 py-4 mb-5 border-light bg-body-tertiary rounded">
+        <div class="card-body">
+            <div class="text-center mb-3"><i class="bi bi-person-plus icon-login"></i></div>
+            <h3 class="card-title text-center mb-3">Regístrate</h3>
+            <form (ngSubmit)="register()" [formGroup]="myForm">
+                <div class="row g-2">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Nombres" formControlName="names">
+                        <label for="floatingName">Nombres</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('names')?.invalid && myForm?.get('names')?.touched">
+                            <span *ngIf="myForm?.get('names')?.errors?.['required']">El nombre es requerido</span>
+                            <span *ngIf="myForm?.get('names')?.errors?.['maxlength']">El nombre no debe ser mayor a 20 caracteres</span>
+                        </div>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingLastNames" placeholder="Apellidos" formControlName="lastNames">
+                        <label for="floatingLastNames">Apellidos</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('lastNames')?.invalid && myForm?.get('lastNames')?.touched">
+                            <span *ngIf="myForm?.get('lastNames')?.errors?.['required']">Los apellidos son requeridos</span>
+                            <span *ngIf="myForm?.get('lastNames')?.errors?.['maxlength']">El apellidos no debes ser mayor a 20 caracteres</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col form-floating">
+                        <select class="form-select" id="floatingSelect" formControlName="indentificationType" aria-label="Floating label select example">
+                            <option selected>Seleccione</option>
+                            <option value="CC">Cédula de ciudadanía</option>
+                            <option value="CE">Cédula extranjera</option>
+                            <option value="PP">Pasaporte</option>
+                        </select>
+                        <label for="floatingSelect">Tipo de documento</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('indentificationType')?.invalid && myForm?.get('indentificationType')?.touched">
+                            <span *ngIf="myForm?.get('indentificationType')?.errors?.['required']">El tipo de documento es requerido</span>
+                        </div>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingIdNumber" placeholder="Número de documento" formControlName="identificationNumber">
+                        <label for="floatingIdNumber">Número de documento</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('identificationNumber')?.invalid && myForm?.get('identificationNumber')?.touched">
+                            <span *ngIf="myForm?.get('identificationNumber')?.errors?.['required']">El número de identificación es requerido</span>
+                            <span *ngIf="myForm?.get('identificationNumber')?.errors?.['maxlength']">El número de identificación no debe ser mayor a 10 números</span>
+                            <span *ngIf="myForm?.get('identificationNumber')?.errors?.['pattern']">Sólo se permiten números</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="Email" formControlName="email">
+                        <label for="floatingEmail">Email</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('email')?.invalid && myForm?.get('email')?.touched">
+                            <span *ngIf="myForm?.get('email')?.errors?.['required']">El email es requerido</span>
+                            <span *ngIf="myForm?.get('email')?.errors?.['maxlength']">El email no debe ser mayor a 25 números</span>
+                            <span *ngIf="myForm?.get('email')?.errors?.['email']">Debe ser un correo válido</span>
+                        </div>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingUserName" placeholder="Nombre de usuario" formControlName="userName">
+                        <label for="floatingUserName">Nombre de usuario</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('userName')?.invalid && myForm?.get('userName')?.touched">
+                            <span *ngIf="myForm?.get('userName')?.errors?.['required']">El nombre de usuario es requerido</span>
+                            <span *ngIf="myForm?.get('userName')?.errors?.['maxlength']">El nombre de usuario no debe ser mayor a 10 caracteres</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" formControlName="password">
+                        <label for="floatingPassword">Contraseña</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('password')?.invalid && myForm?.get('password')?.touched">
+                            <span *ngIf="myForm?.get('password')?.errors?.['required']">La contraseña es requerida</span>
+                            <span *ngIf="myForm?.get('password')?.errors?.['maxlength']">El contraseña no debe ser mayor a 10 caracteres</span>
+                        </div>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="password" class="form-control" id="floatingConfirmPassword" placeholder="Confirmar contraseña" formControlName="confirmPassword">
+                        <label for="floatingConfirmPassword">Confirmar contraseña</label>
+                        <div class="text-danger"
+                            *ngIf="myForm?.get('confirmPassword')?.invalid && myForm?.get('confirmPassword')?.touched">
+                            <span *ngIf="myForm?.get('confirmPassword')?.errors?.['required']">Es necesario confirmar la contraseña</span>
+                            <span *ngIf="myForm?.get('confirmPassword')?.errors?.['noMatch']">Las contraseñas no coinciden</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-lg">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
